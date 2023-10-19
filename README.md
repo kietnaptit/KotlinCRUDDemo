@@ -16,5 +16,7 @@ This is a simple Work Management App to demonstrate basic tasks between Kotlin a
 * This app contains lots of bug. I am a very beginner in Mobile App Development. I can only make sure basic CRUD task work
 
 ## Reference Resources
-
-* Update soon, but thanks ChatGPT a lot
+* [CRUD Operations In Android SQLite - Kotlin](https://www.c-sharpcorner.com/article/crud-operations-in-android-sqlite-kotlin/)
+* [RecyclerView & ListView in Kotlin](https://www.androidmads.info/2017/07/recyclerview-listview-in-kotlin.html)
+* [androidmads/KotlinListRecyclerView: ListView & RecyclerView sample for Kotlin](https://github.com/androidmads/KotlinListRecyclerView)
+* ChatGPT a lot
