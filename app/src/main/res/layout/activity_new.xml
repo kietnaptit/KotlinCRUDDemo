@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/detail_title"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inIDField"
+        app:layout_constraintStart_toStartOf="@+id/inIDField" />
+
+    <TextView
+        android:id="@+id/idField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/idField"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/nameField"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/desField"
+        app:layout_constraintStart_toStartOf="@+id/idField" />
+
+    <TextView
+        android:id="@+id/desField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="@string/desField"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inDescriptionField"
+        app:layout_constraintStart_toStartOf="@+id/nameField" />
+
+    <TextView
+        android:id="@+id/genderField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/genderField"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inGenderField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/dateField"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inDateField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inIDField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inNameField"
+        app:layout_constraintEnd_toEndOf="@+id/inNameField" />
+
+    <EditText
+        android:id="@+id/inNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/desField"
+        app:layout_constraintEnd_toEndOf="@+id/inDescriptionField" />
+
+    <EditText
+        android:id="@+id/inDescriptionField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/desField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/inGenderField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/inDescriptionField"
+        app:layout_constraintTop_toBottomOf="@+id/inDescriptionField">
+
+        <RadioButton
+            android:id="@+id/malePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <RadioButton
+            android:id="@+id/femalePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="209dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inDateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/dateField"
+        app:layout_constraintTop_toBottomOf="@+id/inGenderField" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/save"
+        app:layout_constraintStart_toStartOf="@+id/inDateField"
+        app:layout_constraintTop_toBottomOf="@+id/inDateField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

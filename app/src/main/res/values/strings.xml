@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Work Management</string>
+    <string name="title_activity_detail">Work Detail</string>
+    <string name="first_fragment_label"></string>
+    <string name="detail_title">Work Detail</string>
+    <string name="idField">ID</string>
+    <string name="nameField">Name</string>
+    <string name="desField">Description</string>
+    <string name="genderField">Gender</string>
+    <string name="dateField">Finish Date</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+</resources>
